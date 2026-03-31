@@ -57,7 +57,7 @@ export default function App() {
           {/* Tu firma de autor / desarrollador */}
           <div className="flex items-center gap-1.5 text-[9px] text-stone-400 uppercase tracking-[0.3em] font-light opacity-70 hover:opacity-100 transition-opacity">
             <span>Diseño & Desarrollo por</span>
-            <span className="font-medium text-stone-500">Mateo Cepeda ©</span>
+            <span className="font-medium text-stone-500">Mateo Cepeda © 123</span>
             {/* Si tienes un portafolio o Instagram de trabajo, puedes envolver tu nombre en una etiqueta <a> así:
             <a href="https://tu-link.com" target="_blank" rel="noreferrer" className="font-medium text-stone-500 hover:text-olivina transition-colors">Mateo</a>
             */}
