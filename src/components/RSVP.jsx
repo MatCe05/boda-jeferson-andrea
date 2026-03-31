@@ -142,9 +142,6 @@ export default function RSVP() {
                 <h2 className="font-serif text-3xl md:text-4xl text-stone-800 uppercase tracking-[0.2em] mb-3 text-center">
                   Confirmar Asistencia
                 </h2>
-                <p className="text-stone-400 italic font-serif text-sm md:text-base mb-12 text-center">
-                  Favor confirmar antes del 15 de enero de 2026
-                </p>
 
                 <div className="w-full space-y-8">
                   
