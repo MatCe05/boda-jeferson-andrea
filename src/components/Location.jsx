@@ -6,19 +6,21 @@ const locations = [
   {
     title: "Ceremonia",
     icon: FaChurch,
-    time: "4:00 PM",
+    time: "18 de Julio 2026 - 4:00 PM",
     place: "Las Mercedes Finca Cafetera",
     //address: "Cumaca, Cundinamarca",
     city: "Cumaca, Cundinamarca",
+    date: "18 Jul 2026",
     link: "https://maps.app.goo.gl/jXRMSFbQTkvTHY737" // Reemplaza con el link real
   },
   {
     title: "Celebración",
     icon: FaGlassCheers,
-    time: "7:00 PM",
+    time: "18 de Julio 2026 - 7:00 PM",
     place: "Las Mercedes Finca Cafetera",
     //address: "Cumaca, Cundinamarca",
     city: "Cumaca, Cundinamarca",
+    date: "18 Jul 2026",
     link: "https://maps.app.goo.gl/jXRMSFbQTkvTHY737" // Reemplaza con el link real
   }
 ];
@@ -54,8 +56,8 @@ export default function Location() {
               <div className="space-y-2 mb-10">
                 <p className="font-bold text-stone-700 text-lg uppercase tracking-tight">{loc.place}</p>
                 <p className="text-stone-500 font-light leading-relaxed">
-                  {loc.address} <br />
-                  {loc.city}
+                  {loc.address}
+                  {loc.city} <br />
                 </p>
               </div>
 
