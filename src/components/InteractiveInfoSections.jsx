@@ -98,7 +98,7 @@ export default function InteractiveInfoSections() {
           <ul className="space-y-4 list-disc pl-5 marker:text-olivina/50">
             {isFinca ? (
               <>
-                <li>Check-in dia sábado 12:00 m</li>
+                <li>Check-in dia sábado 10:00 am</li>
                 <li>Contarás con parqueadero libre</li>
                 <li>Este día el hotel no cuenta con servicio de almuerzo</li>
                 <li>Cumplir con el código de vestimenta sugerido</li>
