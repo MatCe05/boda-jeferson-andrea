@@ -1,0 +1,452 @@
+Why is it important to refresh the list of open windows when capturing objects in a pop-up window?
+
+*A. To capture the correct window title.
+B. To capture additional elements that may not be visible initially.
+C. To optimize performance by closing unnecessary windows.
+D. To avoid delays in the automation process.
+
+
+Automation developer is trying to extract data using the PDF package from a password-protected PDF that restricts editing but not viewing.
+How should you handle the password fields when setting up the Extract Text action?
+
+A. Enter the password in both the User and Owner Password fields
+B. Skip the PDF entirely as it cannot be processed
+*C. Enter the password in the User Password field
+D. Leave the User Password field blank
+
+
+An automation developer needs to save email attachments from each email within an email account. Which action should they use to ensure attachments related to one email are present in the downloaded folder at a time?
+
+A. Loop through All Emails, Save All Attachments, Process Attachments, Delete the contents in the folder and Proceed to the next iteration
+B. Save Attachments then mark the email as read; loop through the rest of the emails the same way
+*C. Loop through All Emails, Save Attachments, Process Attachments, Delete the contents in the folder and Proceed to the next iteration
+D. Save All Attachments, each email will have its own folder created allowing you to loop through the folders associated with the emails
+
+
+A site you must automate displays a list of purchase orders. There are 1000 total purchase orders. There is a drop-down list that allows you to display the orders in pages of 10, 25, 50, or 100 at a time. There is a search box that allows you to find a record. At the bottom are controls to display the pages of data. What is the most efficient way to find a specific purchase order from the list?
+
+A. Enter only the last four numbers of the purchase order into the search box to more quickly find the purchase order you need. Extract each field using Recorder: Capture.
+B. Set the drop-down to 100 which reduces the number of pages to search through to 10, then page through the results, extracting the tables, and parsing through them.
+*C. Enter the purchase order number into the search box, capture the table, and parse the values from the table variable by row and column index.
+D. Click the PO Number heading to sort the table by purchase order number. Select the last item in the list to get the appropriate purchase order number.
+
+
+A developer notices that data is not being passed from the parent to the child Task Bot. What is the most likely causes? Choose two.
+
+*A. Variables were not marked as input in the child bot.
+B. The input variables in the child bot were not named the same as the output variables in the parent bot.
+*C. The values were not set in the parent bot.
+D. The child bot is not set to run.
+E. The parent bot used the wrong action.
+
+you receive a JSON message from a REST web service. You decide it is easier to parse the JSON message if it is contained in a Dictionary variable, so you use JSON: Convert JSON to Dictionary. Inside the message is a repeating array of users. How are these users processed?
+
+A. Perform a separate REST web service call for each of the users contained in the Dictionary variable to receive their individual values
+*B. Use the Loop: Through Each JSON Node to process each of the items in the List, based on the Dictionary node name
+C. Use List: Assign and copy the user array from the Dictionary Variable, then process the Dictionaries in the List
+D. Use the Dictionary: Assign action to copy the specific key from the Dictionary variable into a new Dictionary variable, and process the users from the new Dictionary
+
+
+An automation contains a loop that processes Excel rows. Inside the loop, a "Continue" action is used when a certain condition is met. What will happen when the condition for the "Continue" action is true?
+
+A. The loop will pause until manually resumed.
+*B. The loop will skip the current iteration.
+C. The loop will exit immediately and move to the next action
+D. The loop will process the current row.
+
+You receive a JSON message from a REST web service. This message contains values that must be modified before forwarding the message to another system. What combination of actions best allows you to modify the message?
+
+*A.JSON: Convert JSON to Dictionary, modifying the values in the Dictionary variable, then using JSON: Convert Dictionary to JSON
+B. After the JSON: Start Session, use a JSON: Save JSON to Text, then modify the text document with the new values
+C. Multiple String: Replace actions
+D. Using JSON: Get Node Value, modifying the values, and then JSON: Update Node Value
+
+You are building an automation that places a bid on an auction site at the last moment. There is a counter on-screen, ticking down the seconds until the auction ends. What is the best way to have the automation wait until the last second to place a bid?
+
+A. Display a Message Box that says, “Click OK when the timer hits 2 seconds.” When the user clicks OK, the automation continues and enters the bid.
+*B. Use a Recorder: Capture to read the current value of the counter off the screen. Use a Delay with that value to wait and place the bid.
+C. Use a Prompt: For value and have the end-user enter the number of seconds remaining. Use a Delay action to wait for that length of time, and have the automation enter the bid.
+D. Add a bid for the minimum amount and watch the highest bidder. If the highest bidder changes, bid the minimum amount again.
+
+An automation developer has a Task Bot that frequently logs into an application. To reuse this code in multiple automations, what approach should the developer take?
+
+A. Manually copy the login code to each bot.
+B. Segment the automation by Step actions.
+*C. Create a sub-taskbot for login and reuse it.
+D. Use a single bot for all automations, copying to a new bot as needed.
+
+
+An Automation developer used a REST Web service: Get method to send a request and get the response in XML. Once the response was received, which action should be used to fetch the value of a single node?
+
+A. XML: Save Session Data
+*B. XML: Get Single Node
+C. XML: Get Multiple Nodes
+D. XML: Get Node Value
+
+You have created an automation to connect to your Outlook mailbox and process emails in plain text format. After retrieving the required information, the automation sends a summary email to a specified recipient. How should you ensure the automation closes the email server connection correctly?
+
+A. Place the disconnect action immediately after the Connect action.
+*B. Use the disconnect action outside the loop, after processing all emails.
+C. Place the disconnect action inside the loop, after each email is processed.
+D. Avoid using the disconnect action, as it is not necessary when sending emails.
+
+When looping through items in a list, what can a developer do if they want to skip an item based on a specific condition?
+
+A. Change the list order dynamically.
+B. Delete the item from the list before looping.
+C. Sort the list contents based on the specific condition.
+*D. Use a Loop: Continue action inside an if action.
+
+
+While debugging an automation, a developer needs to inspect the contents of a data table variable. What is the most efficient method to do this within Automation 360?
+
+A. Write the data table to a CSV file and inspect it.
+B. Convert the data table to a string and display it in a message box.
+C. Manually print each row to the console.
+*D. Use the debugging feature to view the data table in memory.
+
+
+You are automating a web application using the Recorder package's Capture action. You notice that some objects on the web page have properties that change every time the page is refreshed. What is a potential issue with objects whose properties change when the page is refreshed?
+
+A. They will cause security issues in the web application
+*B. The Capture action won't locate them
+C. They won't display correctly
+D. They will slow down the automation
+
+
+An automation developer is creating an automation to extract user data from a web page. The data in that page loads after a delay of 15 to 45 seconds. What action should the developer include in the steps to extract the data?
+
+A. Wait: Wait for screen change
+*B. Wait: Wait for window
+C. Window: Activate
+D. Browser: Open
+
+What is a common challenge when automating the ‘Save As’ dialog in Excel, and how can it be addressed?
+
+A. Use a full path in the file name box to avoid navigating through folders.
+*B. The dialog frequently changes its layout; use multiple capture actions to handle this.
+C. Automating the ‘Save As’ dialog is straightforward with any tool; no special considerations are needed.
+D. The dialog does not support keyboard shortcuts; use mouse clicks to interact with it.
+
+
+While working with a JSON message, a developer wants to extract a numerical value and directly assign it into a number variable for further processing. Which method should they use?
+
+A. Use JSON: Get node list to extract the value to a list then copy it to a number variable
+*B. Use JSON: Get node value and provide a number variable
+C. Manually parse the JSON message and assign the value to a number variable
+D. Use JSON: Convert JSON to dictionary with multiple variable mappings and map the value to a number variable
+
+
+You are automating the processing of a JSON message that contains a list of employees. You have used the JSON: Get Node List action to extract the list of employee nodes into a list variable named lEmployees. Which action should you take next to iterate over each employee node and retrieve their details?
+
+A. Use a Loop action with the iterator type set to ‘Number of Times.’
+B. Use the ‘JSON End Session’ action to close the JSON session before processing the list.
+C. Use a ‘JSON Get Node Value’ action inside a Loop to extract details from the first employee.
+*D. Use a Loop action with the iterator type set to ‘For Each Item in the List.’
+
+
+You have a printed-to-file (digitally created) PDF and a scanned PDF. You need to extract data from them using Automation 360. Which type of PDF can have its data extracted using the PDF: Extract Text action in Automation 360?
+
+A. Neither - only Document Automation can extract data
+B. Both printed-to-file and scanned PDFs
+C. Only scanned PDFs
+*D. Only printed-to-file PDFs
+
+
+What would be a suitable approach to extract data if the number of repeating elements on the webpage changes frequently, affecting the automation’s accuracy?
+
+A. Hardcoding the maximum expected number of elements into the automation.
+*B. Determining the number of elements and looping through them.
+C. Restricting the automation to pages with a fixed number of elements only.
+D. Re-capturing each element manually each time the page is refreshed.
+
+After capturing an HTML table into a data table variable, the developer notices the header row is not required. How should they remove this header row?
+
+*A. Use the Data Table: Delete Row action and set the index to zero.
+B. Use the 'Remove Header' option in the Recorder: Capture.
+C. Sort the data to exclude the header row.
+D. Manually delete the first row in the CSV after exporting.
+
+
+During email automation, you need to filter emails by subject content, sender, and the date received. Which of the following methods should you use?
+
+A. Set up a dedicated email rule in Outlook to move filtered emails to a separate folder and process only that folder.
+B. Manually sort emails in your Outlook mailbox before running the automation.
+C. Use a combination of conditional If/Else statements inside the loop to check for subject, sender, and date.
+*D. Configure the Loop action's filtering options specifying subject content, sender, and received date criteria.
+
+
+If a captured element's DOMXPath path changes slightly between different items, what is the best approach to generalize the XPath for dynamic capture?
+
+A. Capture all items separately and handle each path individually with its own variables.
+B. Use a fixed XPath and manually adjust it for each new item.
+*C. Identify the index in the XPath that changes and use an index variable.
+D. Use a regular expression to match the varying parts of the XPath.
+
+
+What is the purpose of the “Quick Map Variables” feature in the Task Bot Run action?
+
+A. To create new child bots quickly and map variables between child and the parent bots.
+B. To save variables globally.
+*C. To automatically map variables that share the same name and data type.
+D. To pause the bot execution.
+
+You have successfully used PDF: Extract Text to extract text from a PDF document. What is the best approach you can take to handle the extracted data from the output text file?
+
+A. Directly modify the PDF to rearrange the text
+B. Open the text document in Notepad and manually copy and paste the data into the target application
+*C. Have the automation open the text document and parse the data
+D. Export the data to a CSV file, then use Excel Advanced: Open to work with the data
+
+When using the JSON: Convert JSON to Dictionary with a JSON message with repeating nodes (in an array format), what is the format of the Dictionary variable?
+
+*A. Dictionary with the parent node name > Dictionary with indexed key > Dictionary with named key
+B. Dictionary with the parent node name > Dictionary with indexed key > List variable > Dictionary with named key
+C. Dictionary with indexed key > List variable > Dictionary with named key
+D. Dictionary with indexed key > Dictionary with named key > List variable with named nodes
+
+
+In Document Automation, the developer is extracting data from a mortgage document. He needs to ensure that the monthly mortgage payment field shows "N/A" if the loan term is zero. How can this be achieved?
+
+A. Use a document rule to check if the monthly mortgage payment amount, and set the loan term to “N/A” is it is zero
+*B. Use a document rule to check the loan term and set the monthly mortgage payment to "N/A" if it's zero
+C. Add a field rule to the monthly mortgage payment field to set its value to zero if the loan term is "N/A"
+D. Create a new field for immediate repayments and set the value based on the loan
+
+A developer wants to pass data from a parent Task Bot to a child Task Bot. What must the developer ensure in the child Task Bot for this data to be received?
+
+A. Use dictionary variables.
+B. Utilize a stop action.
+C. Click on Quick Map Variables.
+*D. Mark variables as input.
+
+You are developing an automation that retrieves and processes emails from an Outlook mailbox. After successfully processing an email, the automation must send a follow-up email to confirm receipt and include the original email's subject in the reply. How can you achieve this?
+
+A. Use the "emailSubject" dictionary key to retrieve the subject and include it in the Send Email action's subject field.
+*B. Use the "Reply" email action to automatically include the original subject.
+C. Use the Loop action to iterate through the email's properties and extract the subject and include it in the Send Email action's subject field.
+D. Manually copy and paste the subject into the Send Email action.
+
+A developer is tasked with connecting to an enterprise web server to access emails. They need to authenticate using OAuth 2. Where is the best place to store the necessary credentials?
+
+A. The automation developer’s personal credential manager
+*B. Credential Vault
+C. IT department for direct login credentials
+D. A shared document on the corporate intranet
+
+
+What is the primary benefit of using generative AI in Document Automation?
+
+A. It increases the variety of document types that can be processed.
+*B. It enables the extraction of data from unstructured documents.
+C. It improves the accuracy of OCR text extraction.
+D. It reduces the processing time for structured documents.
+
+An Automation developer used a REST Web service: Get method to send a request and get the response in XML. Once the response was received, what is the name of the ‘key’ to be used to capture the body of response?
+
+A. header
+*B. Body
+C. Header
+D. body
+
+The automation must handle multiple workbooks with similar invoice data structures. Each workbook has different worksheets for various departments. How should the automation be configured to process invoices from the correct worksheet in each workbook?
+
+A. Use conditional logic to determine which worksheet to process based on the workbook name.
+*B. Use the Switch to Sheet action with dynamic worksheet names based on the department.
+C. Combine all department worksheets into one before processing.
+D. Hardcode the worksheet names in the Switch to Sheet actions for each department.
+
+When working with web applications, Recorder: Capture is used to manipulate controls. When working with legacy Windows applications, what action do you use to manipulate controls?
+
+A. The Recorder package
+*B. The Legacy Automation package
+C. The App Integration package
+D. The Terminal Emulator package
+
+A developer is working on an automation to forward emails after processing their attachments. What additional information do they need to successfully set up the forwarding functionality?
+
+A. The original sender’s IP address, email address, and authentication information
+B. The email client configuration file
+*C. SMTP IP address, port, protocol, and authentication information
+D. Only the recipient’s email address
+
+You want to automate sending an email notification whenever a specific keyword is found in the body of an unread email. How can this be best implemented?
+
+A. Manually review emails to check for the keyword before running the automation.
+B. Create a child automation to search for keywords and send notification emails to the required specific email IDs from the parent automation.
+C. Use an Outlook rule to search for the keyword and send emails accordingly.
+*D. Use a Loop action to iterate through unread emails and include an If statement inside the loop to check for the keyword.
+
+
+When processing email attachments, the developer realizes that the attachments include signature logos from the emails. What should the developer do to manage these appropriately?
+
+A. Set up a rule in the email client to exclude signature logos.
+*B. Filter out non-essential files by their extension while processing.
+C. Manually delete the signature logos after saving the attachments and then process them.
+D. Use the Save All Attachments action to handle everything together.
+
+The developer needs to retrieve specific data from a data table by directly addressing its rows and columns, but they are unsure about the starting point of indices.
+
+A. Row indices start at 0 and column indices start at 1.
+B. Indices can be configured to start at either 0 or 1.
+*C. Row and column indices start at 0.
+D. Row and column indices start at 1.
+
+
+A developer is using Document Automation to extract data from an unstructured mortgage document. After processing, the loan term field returns "15 years" instead of just the number "15." What should the developer do to correct this using rules?
+
+A. Set the confidence threshold for the loan term field to a higher value.
+B. Modify the Generative AI query to "Return the loan term as a number."
+*C. Add a field rule to replace the word "years" with an empty string.
+D. Change the data type of the loan term field to "Number."
+
+Using Document Automation, a developer needs to ensure that if the OCR confidence for a particular field is below a certain threshold, the document should be sent to validation. Where should this threshold be set?
+
+A. In the OCR provider settings, under global confidence settings.
+B. In the control room general settings.
+*C. In the document rules configuration for fields and validation.
+D. In the field properties under the confidence setting.
+
+A developer wants to remove an item from a list variable based on its position. What is the starting index used to identify the position of items in a list variable?
+
+A. 10
+B. 2
+*C. 0
+D. 1
+
+In Document Automation, how can a developer ensure that an extracted field value is flagged if it contains non-numeric characters, using the power of regular expressions?
+
+*A. Add a field rule using a regular expression that matches numeric values only and flag the field if it does not match.
+B. Use document rules to compare the field against a predefined numeric field.
+C. Set a high confidence threshold to catch potential errors.
+D. Modify the data type to "Number" and let the system automatically flag non-numeric values when the document goes to validation.
+
+A developer is working with Document Automation to extract a loan ID number that should always start with the characters "ST." How can the developer ensure that any extracted loan ID that does not start with "ST" is flagged for manual review?
+
+*A. Add a field rule that checks if the loan ID value starts with "ST" and flag it if it does not.
+B. Set the field's data type to "Text" and manually review the document.
+C. Modify the Generative AI query to include "Check if the loan ID starts with ST."
+D. Use a regular expression to extract the value and then manually inspect it.
+
+
+You have an automation that must select an item from a drop-down list. Which of the following is the best way to select an item?
+
+*A. Use a Recorder: Capture to capture the drop-down list, use Select Item by Name, and provide the name of the item.
+B. Set focus to the control using Simulate Keystrokes, press ALT+down arrow to expand the list, use the arrow keys to select the item, and press enter.
+C. Use a Recorder: Capture to set focus to the drop-down list, and send the keystrokes for ALT+down arrow, the item name, and the enter key.
+D. Use a Recorder: Capture to capture the drop-down list, use Select Item by Index, and provide the index of the item.
+
+While creating a learning instance in Document Automation, a developer wants to ensure that a certain field is always extracted from the document, and if it is not present, the document should be sent to validation. How can they best achieve this?
+
+A. Increase the confidence threshold for this field.
+B. Add a document rule to flag documents missing this field.
+C. Modify the Generative AI query to prioritize this field.
+*D. Set the field as required in the field properties.
+
+Which action is most appropriate when a developer wants to convert a list of variables into a single string with items separated by commas?
+
+*A. List: Join items
+B. String: Split
+C. List: Append
+D. List: Assign
+
+
+A developer wants to validate that a field value does not exceed a certain amount, say $10,000. Which type of validation should they implement in Document Automation?
+
+A. Use a regular expression to check the format of the value.
+B. Use a field rule with the formula “field_name > 10000”.
+C. Implement a document rule to manually review fields exceeding $10,000.
+*D. Use a field rule with a comparison operator to check if the value is greater than $10,000.
+
+While working on an automation, a developer decides to pass multiple values into a Python function. However, they realize that only one variable can be passed directly. What is the best approach the developer can use to pass multiple values?
+
+A. Encode all values into a single string
+B. Use multiple ‘Python script: Execute Function’ actions for each value
+C. Use an array instead of a variable
+*D. Pass a dictionary, list, or table variable containing multiple values
+
+
+When configuring the loop for capturing multiple items on a page, why is it important to initialize a counter variable?
+
+*A. To determine the number of elements to be captured.
+B. To reset the index of the item being processed.
+C. To keep track of the total number of page loads.
+D. To manually update the number of repeating elements.
+
+A developer wants to ensure that any errors in the Python script do not crash the entire automation. What is the best practice to handle this?
+
+A. Log the errors to a file and continue the automation
+*B. Use a Try-Catch block to catch any errors
+C. Use a different programming language for error handling
+D. Run the script multiple times until it succeeds
+
+
+A developer used an Error Handler: Try action and has several actions within it. There is a Catch action present but does not have any actions contained within. During testing, they notice that the automation plays back without any error messages, but it pauses for about 30 seconds, then the "Bot has completed successfully" message appears. How can they see what caused the delay in processing? Identify the best answer following automation development best practices.
+
+A. Change the timeout of the Try action to 1 second to remove the processing delay. Change the timeout action of the Catch to 1 second to display the results immediately.
+B. Remove the Catch action. Upon the next run of the automation, the error messages will appear as normal and will reveal the cause of the delay.
+C. Move the actions from within the Try action and put them into the Catch action. This will cause the automation to display any error messages that occur.
+*D. Within the Catch, create variables for the Error Message and Error Line Number. Use a Message Box within the Catch to display the values of those variables.
+
+
+You are designing an automation to interact with a web application. You need to automate tasks to interact with objects on the web page. To achieve this, you decide to use the Capture action within the Recorder package of your automation tool.
+What can you use the Capture action to perform to the web application?
+
+A. Send emails
+*B. Click buttons and fill in text fields
+C. Perform calculations
+D. Create spreadsheets
+
+An administrator wants to globally disable email reports for all users on the Automation 360 platform. What is the correct procedure?
+
+A. Turn off email notifications in the Notification Channels section
+*B. Use the settings in the Notifications to turn off email reports.
+C. Filter notifications by Attention Needed
+D. Modify user-specific settings in the Notifications section
+
+
+In an automation, a loop is used to process rows of data from an Excel file. The loop contains a message box to display the current row’s value after a certain condition is checked. If the condition is not met, the message box is skipped. Which action in the loop controls whether the message box is displayed or not?
+
+A. String to Number action
+B. Break action
+C. Continue action
+*D. If action
+
+A developer has written an automation that interacts with a third-party API. The automation occasionally encounters issues with network connectivity, causing the API calls to fail. To ensure the automation doesn’t crash and can log these failures, what approach should the developer use?
+
+A. Use a Try to trigger the Catch block on network failure
+B. Use the Task Bot: Stop action to terminate the bot if an API call fails
+*C. Use a Try block to handle logging the network failures
+D. Use a nested Catch block for each API call
+
+A developer adds an "If" action within a loop to check if a number is greater than 100. If the condition is true, a loop break is performed. What should the developer replace the break action with to ensure that the loop processes the next row without exiting?
+
+A. A message box action
+B. An additional "If" action
+C. A label for the loop
+*D. A "Continue" action
+
+You are creating a large automation with over 200 actions. Which action from the Task Bot package should you use to improve maintainability by breaking down the automation into smaller parts?
+
+A. Pause
+B. Stop
+*C. Run
+D. Error Handler
+
+You receive a JSON message from a REST web service. This message contains an array labeled “users”, along with multiple users and their associated information. Since there are multiple users, you decide to use the JSON: Get Node List to parse the individual users. What action is needed next to parse the individual users?
+
+A. JSON: Get Node Value
+B. Loop: Through List
+*C. Loop: Through Each JSON Node
+D. JSON: Convert JSON to Dictionary
+
+
+If a user only wants to see notifications that are high risk or require caution, which feature should they use?
+
+A. Hover Over Action
+B. Modify Notification Settings
+C. Enable Email Reports
+*D. Filter by Attention Needed
+
+
+
