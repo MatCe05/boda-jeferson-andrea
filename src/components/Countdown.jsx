@@ -3,7 +3,7 @@ import Reveal from './Reveal';
 
 export default function Countdown() {
   // Fecha objetivo: 27 de Febrero de 2026
-  const targetDate = new Date(2026, 6, 18, 16, 0, 0).getTime();
+  const targetDate = new Date(2026, 6, 18, 15, 0, 0).getTime();
   const [timeLeft, setTimeLeft] = useState({ DÍAS: 0, HR: 0, MIN: 0, SEG: 0 });
 
   useEffect(() => {

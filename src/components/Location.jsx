@@ -6,7 +6,7 @@ const locations = [
   {
     title: "Ceremonia",
     icon: FaChurch,
-    time: "18 de Julio 2026 - 4:00 PM",
+    time: "18 de Julio 2026 - 3:00 PM",
     place: "Las Mercedes Finca Cafetera",
     //address: "Cumaca, Cundinamarca",
     city: "Cumaca, Cundinamarca",
@@ -16,7 +16,7 @@ const locations = [
   {
     title: "Celebración",
     icon: FaGlassCheers,
-    time: "18 de Julio 2026 - 7:00 PM",
+    time: "18 de Julio 2026 - 6:00 PM",
     place: "Las Mercedes Finca Cafetera",
     //address: "Cumaca, Cundinamarca",
     city: "Cumaca, Cundinamarca",
